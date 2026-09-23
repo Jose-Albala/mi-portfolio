@@ -27,14 +27,49 @@ h2 {
   margin-bottom: 12px;
 }
 
-.proyecto {
+.projects {
   background-color: #1e293b;
   padding: 24px;
   border-radius: 12px;
   margin-bottom: 20px;
 }
 
-.proyecto h3 {
+.projects h3 {
   color: #38bdf8;
   margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+body.light-mode {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode .projects h3 {
+  color: #0284c7;
+}
+
+body.light-mode .projects {
+  background-color: #e2e8f0;
+}
+
+#change-theme {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 16px;
 }
